@@ -5,36 +5,48 @@
 \paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 2.1: Path Working Directory\
-2.2: 
+\f0\fs24 \cf0 2.1: 		Path Working Directory\
+\
+2.2: 		
 \f1\fs22 \cf2 \CocoaLigature0 /Users/jerom/Google Drive/UCU/Winter 3/ucaccmet2j/Week II/Shell_assignment\
-2.3: Change Directory\
-2.4: .. makes it change to the directory one level up. I used \'91cd /Google_Drive/UCU/Winter_3/ucaccmet2j/Week_II/Shell_assignment\'92 to go back down. To go to \'91shell_magic\'92, I used \'91cd /Google_Drive/UCU/Winter_3/ucaccmet2j/Week_II/Shell_assignment/shell_magic\'92.\
-3.1: It made two files called \'91hello\'92 and \'91world\'92. I should name it hello_world.\
-3.2: Make Directory. \'91mkdir hello_world\'92\
-3.3: MoVe\
-3.3: maybe I should specify the file type because there is also a folder called \'91 hello world\'92.\
+\
+2.3: 	Change Directory\
+\
+2.4: 	.. makes it change to the directory one level up. I used \'91cd /Google_Drive/UCU/Winter_3/ucaccmet2j/Week_II/Shell_assignment\'92 to go back down. To go to \'91shell_magic\'92, I used \'91cd /Google_Drive/UCU/Winter_3/ucaccmet2j/Week_II/Shell_assignment/shell_magic\'92.\
+\
+3.1: 	It made two files called \'91hello\'92 and \'91world\'92. I should name it hello_world.\
+\
+3.2: 	Make Directory. \'91mkdir hello_world\'92\
+\
+3.3: 	MoVe\
+\
+3.3: 	maybe I should specify the file type because there is also a folder called \'91 hello world\'92.\
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
 touch hello_world.bfe\
 mv hello_world.bfe hello_world.txt\
 mv hello_world.txt hello_world\
 cd - /Users/jerom/Google_Drive/UCU/Winter_3/ucaccmet2j/Week_II/Shell_assignment/shell_magic\
 mv hello_world.txt ..\
-3.4 Moving deletes it in the old directory. Copying saves it in both the old and the new directory.\
+\
+3.4 		Moving deletes it in the old directory. Copying saves it in both the old and the new directory.\
 cp hello_world.txt ../shell_magic/hello_world\
 cd ../shell_magic/hello_world\
 mv hello_world.txt world_hello.txt\
-3.5 ReMove\
+\
+3.5 		ReMove\
 rm hello_world.txt\
 \'91is a directory\'92\
 rm -R ../shell_magic/hello_world\
-4.1: conCATenate\
+\
+4.1: 	conCATenate\
 Do not see anything because file is empty\
-4.2: echo 'file contents' > file.txt\
+\
+4.2: 	echo 'file contents' > file.txt\
 cat file.txt\
 echo 'more contents' >> file.txt\
 cat file.txt\
-4.3 echo 'ApplicationsMusic\
+\
+4.3 		echo 'ApplicationsMusic\
 > Boronate.pngOneDrive - Werkplaats Kindergemeenschap\
 > Creative Cloud FilesPictures\
 > DesktopPublic\
@@ -47,17 +59,30 @@ cat file.txt\
 > Librarypka lead.png\
 > Moviestestdir' > home_contents.list\
 When you have a very large file it clears the rest of the output so you can have an overview of the file\
-5.1 Word Count\
+\
+5.1 		Word Count\
 12 lines, 23 words, 284 characters\
 cat | wc home_contents.list\
 No difference\
 Only wc displays the information about the file. \
 In the second wc displays the information about the displayed info in the file\
-5.2 grep world helloworld.txt\
+\
+5.2 		grep world helloworld.txt\
 hello world \
  world hello\
 grep world worldhello.txt helloworld.txt\
 worldhello.txt:world hello\
 helloworld.txt:hello world \
 helloworld.txt: world hello\
-update }
+\
+6.2: 	tar -xvf aup.tar.gz\
+\
+6.3: 	find ../shell_assignment/aup *\
+cd ../shell_assignmeent/aup\
+find *\
+Deepest level: cohort1/s023fint/s023fint3.aup\
+less ../aup/cohort1/s023fint/s023fint3.aup\
+find * | wc 1380\
+	\
+6.4 		320, find . -type f -name "*.aup" | grep 'cohort3' | wc\
+318 find . -type f -name "*.aup" | grep 'cohort1/\'91 | wc}
